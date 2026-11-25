@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catalogue, démarches et opérations du groupe industriel fictif ACME-Corps.">
+  <title>ACME-Corps — Portail Groupe</title>
+  <link rel="stylesheet" href="./portal.css">
+  <script type="module" src="./portal.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu" data-skip>Aller au contenu</a>
+  <div class="site">
+    <header>
+      <div class="top-bar">
+        <span>ACME-CORPS · PORTAIL GROUPE</span>
+        <div><a href="#groupe">Nos sites</a> · <a href="#modules">Index</a> · <a href="#services/sav">Assistance</a></div>
+      </div>
+      <div class="masthead">
+        <a class="wordmark" href="#accueil"><b>ACME</b><span>CORPS</span></a>
+        <div class="brand">
+          <strong>ACME-Corps Industrie</strong>
+          <span>Équipements industriels, pièces et services de production</span>
+        </div>
+        <form aria-label="Recherche dans le portail" class="search-bar" data-action="search" role="search">
+          <label for="global-search">Recherche transversale</label>
+          <div class="inline-control">
+            <input id="global-search" name="query" type="search" placeholder="Mot-clé / référence" maxlength="80" required>
+            <button>OK</button>
+          </div>
+        </form>
+      </div>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#groupe">Le Groupe</a>
+        <a href="#catalogue">Offres &amp; référentiels</a>
+        <a href="#services">Téléservices</a>
+        <a href="#espace">Espace</a>
+        <a href="#atelier">Exploitation</a>
+        <a href="#stock">Disponibilités</a>
+        <a href="#modules">Annuaire</a>
+      </nav>
+      <div class="site-note">
+        <strong>DIFFUSION INTERNE</strong>
+        <span>Inventaire partiel à Feyzin vendredi matin.</span>
+        <a href="#stock">Consulter les disponibilités</a>
+      </div>
+    </header>
+
+    <div class="column-layout">
+      <aside class="sidebar" aria-label="Rubriques du portail">
+        <section class="box">
+          <h2 class="box-title">Rubriques</h2>
+          <ul class="link-list">
+            <li><a href="#catalogue">Matériels</a></li>
+            <li><a href="#services">Démarches et imprimés</a></li>
+            <li><a href="#espace">Suivi administratif</a></li>
+            <li><a href="#atelier">Incidents et interventions</a></li>
+            <li><a href="#stock">Magasin / fabrication</a></li>
+            <li><a href="#modules">Répertoires</a></li>
+          </ul>
+        </section>
+        <section class="box yellow">
+          <h2 class="box-title">Formulaires</h2>
+          <p><a href="#services/devis">DEV · Formulaire commercial</a></p>
+          <p><a href="#services/sav">SAV · Ticket externe</a></p>
+          <p><a href="#atelier">INT · Déclaration interne</a></p>
+        </section>
+        <section class="box pale">
+          <h2 class="box-title">Implantations</h2>
+          <ul class="link-list">
+            <li><a href="#groupe/saint-priest">Saint-Priest</a></li>
+            <li><a href="#groupe/feyzin">Feyzin</a></li>
+            <li><a href="#groupe/corbas">Corbas</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <main id="contenu" tabindex="-1"></main>
+
+      <aside class="sidebar info-sidebar" aria-label="Suivi et informations">
+        <section class="box purple">
+          <h2 class="box-title">ACCÈS DOSSIER</h2>
+          <form aria-label="Accès rapide à un dossier" data-action="lookup">
+            <label for="quick-reference">N° de suivi</label>
+            <input id="quick-reference" name="reference" placeholder="Ex. DEV-0028" maxlength="18" required>
+            <button>Valider</button>
+          </form>
+          <p><a href="#espace">Liste des dossiers</a></p>
+        </section>
+        <section class="box peach">
+          <h2 class="box-title">Fil opérationnel</h2>
+          <ul class="bulletins">
+            <li><b>08 h 40</b><a href="#atelier">Ligne 2 · signalement en cours</a></li>
+            <li><b>07 h 15</b><a href="#stock">Stock MR-220 · quantité revue</a></li>
+            <li><b>Hier</b><a href="#fiche/PM-40">PM-40 · référence active</a></li>
+          </ul>
+        </section>
+        <section class="box pale">
+          <h2 class="box-title">Correspondance</h2>
+          <p>Service clients et pièces détachées</p>
+          <p><a href="#services/sav">Déposer une demande SAV</a></p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <div><a href="#groupe">ACME-Corps</a> · <a href="#modules">Index fonctionnel</a> · <a href="#releve">Relevé de passage</a> · V0</div>
+      <p>Entreprise fictive. Les dossiers de démonstration sont conservés dans ce navigateur.</p>
+    </footer>
+  </div>
+  <noscript><p>Activez JavaScript pour ouvrir les écrans du portail.</p></noscript>
+</body>
+</html>
